@@ -1,0 +1,74 @@
+{
+    "navbar": {
+        "title": "Genix",
+        "services": "Servicios",
+        "founder": "Fundador",
+        "contact": "Contacto",
+        "startProject": "Iniciar Proyecto"
+    },
+    "hero": {
+        "tagline": "Futuro de la Innovación",
+        "title": "GENIX",
+        "subtitle": "Fábrica de Software",
+        "description": "Creando soluciones digitales de vanguardia con precisión e innovación. Transforme su visión en realidad con nuestro equipo de desarrollo experto.",
+        "startEvolution": "Iniciar Evolución",
+        "viewProjects": "Ver Proyectos",
+        "stats": {
+            "projects": "Proyectos",
+            "quality": "Calidad",
+            "support": "Soporte"
+        },
+        "scroll": "Desplazarse"
+    },
+    "services": {
+        "title": "ARTEFACTOS DEL SISTEMA",
+        "items": {
+            "aiDrivenEcosystems": {
+                "title": "Ecosistemas Impulsados por IA",
+                "description": "Arquitectura de plataformas de IA auto-evolutivas que se adaptan a las necesidades del negocio.",
+                "metric": "40% Reducción de Latencia"
+            },
+            "globalApiInfra": {
+                "title": "Infraestructura API Global",
+                "description": "Gestión de recursos escalable para aplicaciones globales de alta demanda.",
+                "metric": "45% Optimización de Consultas"
+            },
+            "enterpriseScaling": {
+                "title": "Escalado Empresarial",
+                "description": "Sistemas robustos full-stack construidos con Node.js, Nest.js y Kubernetes.",
+                "metric": "99.9% Arquitectura Uptime"
+            }
+        }
+    },
+    "founder": {
+        "role": "El Arquitecto",
+        "name": "Sebastian Diaz",
+        "description1": "Fundador de Genix. Especializado en transformar visiones de negocio complejas en <1>realidades digitales escalables y de alto impacto</1>.",
+        "description2": "Con un historial probado arquitectando plataformas como <1>Reactable AI</1> y <1>Junngla SpA</1>, Sebastian une la brecha entre <3>ingeniería de nivel empresarial</3>—abarcando Node.js, Nest.js e Infraestructura en la Nube—y diseño de producto premium.",
+        "description3": "Un Profesional Scrum Certificado dedicado a la <1>precisión ágil</1> y <3>calidad de código evolutiva</3>. No solo construimos software; diseñamos sistemas adaptativos creados para escalar con su negocio y cautivar a sus usuarios.",
+        "stats": {
+            "experience": "Experiencia",
+            "projects": "Proyectos",
+            "stack": "Stack"
+        },
+        "location": "SANTIAGO, CL"
+    },
+    "contact": {
+        "title": "INICIA LA EVOLUCIÓN",
+        "subtitle": "De la idea a la realidad. Construyamos algo extraordinario.",
+        "form": {
+            "name": "NOMBRE",
+            "email": "CORREO",
+            "message": "MENSAJE",
+            "placeholders": {
+                "name": "Juan Pérez",
+                "email": "juan@ejemplo.com",
+                "message": "Cuéntanos sobre tu proyecto..."
+            },
+            "submit": "Enviar Mensaje"
+        },
+        "footer": {
+            "tagline": "Evolución en Cada Línea de Código."
+        }
+    }
+}

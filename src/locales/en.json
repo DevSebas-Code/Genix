@@ -1,0 +1,74 @@
+{
+    "navbar": {
+        "title": "Genix",
+        "services": "Services",
+        "founder": "Founder",
+        "contact": "Contact",
+        "startProject": "Start Project"
+    },
+    "hero": {
+        "tagline": "Future of Innovation",
+        "title": "GENIX",
+        "subtitle": "Software Factory",
+        "description": "Crafting cutting-edge digital solutions with precision and innovation. Transform your vision into reality with our expert development team.",
+        "startEvolution": "Start Evolution",
+        "viewProjects": "View Projects",
+        "stats": {
+            "projects": "Projects",
+            "quality": "Quality",
+            "support": "Support"
+        },
+        "scroll": "Scroll"
+    },
+    "services": {
+        "title": "SYSTEM ARTIFACTS",
+        "items": {
+            "aiDrivenEcosystems": {
+                "title": "AI-Driven Ecosystems",
+                "description": "Architecting self-evolving AI platforms that adapt to business needs.",
+                "metric": "40% Latency Reduction"
+            },
+            "globalApiInfra": {
+                "title": "Global API Infra",
+                "description": "Scalable resource management for high-demand global applications.",
+                "metric": "45% Query Optimization"
+            },
+            "enterpriseScaling": {
+                "title": "Enterprise Scaling",
+                "description": "Robust full-stack systems built with Node.js, Nest.js and Kubernetes.",
+                "metric": "99.9% Uptime Architecture"
+            }
+        }
+    },
+    "founder": {
+        "role": "The Architect",
+        "name": "Sebastian Diaz",
+        "description1": "Founder of Genix. Specialized in transforming complex business visions into <1>scalable, high-impact digital realities</1>.",
+        "description2": "With a proven track record architecting platforms like <1>Reactable AI</1> and <1>Junngla SpA</1>, Sebastian bridges the gap between <3>enterprise-grade engineering</3>—spanning Node.js, Nest.js, and Cloud Infrastructure—and premium product design.",
+        "description3": "A Certified Scrum Professional dedicated to <1>agile precision</1> and <3>evolutionary code quality</3>. We don't just build software; we engineer adaptive systems designed to scale with your business and captivate your users.",
+        "stats": {
+            "experience": "Experience",
+            "projects": "Projects",
+            "stack": "Stack"
+        },
+        "location": "SANTIAGO, CL"
+    },
+    "contact": {
+        "title": "START THE EVOLUTION",
+        "subtitle": "From idea to reality. Let's build something extraordinary.",
+        "form": {
+            "name": "NAME",
+            "email": "EMAIL",
+            "message": "MESSAGE",
+            "placeholders": {
+                "name": "John Doe",
+                "email": "john@example.com",
+                "message": "Tell us about your project..."
+            },
+            "submit": "Send Message"
+        },
+        "footer": {
+            "tagline": "Evolution in Every Line of Code."
+        }
+    }
+}
