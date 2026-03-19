@@ -15,7 +15,7 @@ const ParticleField = () => {
         const scales = new Float32Array(count);
         for (let i = 0; i < count; i++) {
             // Optimized distribution: Spherical distribution
-            const r = 12 + Math.random() * 11.9; // Spread out more
+            const r = 22.5 + Math.random() * 9.9; // Spread out more
             const theta = 2 * Math.PI * Math.random();
             const phi = Math.acos(2 * Math.random() - 1);
 
@@ -83,12 +83,12 @@ const ParticleField = () => {
 
             if (distSq < radiusSq) {
                 float dist = sqrt(distSq);
-                float force = (70.0 - dist) / 70.0;
+                float force = (50.0 - dist) / 50.0;
                 
                 // Push particles away
                 vec2 dir = normalize(vec2(dx, dy));
                 pos.xy += dir * force * 9.0; 
-                pos.z += force * 12.5; 
+                pos.z += force * 8.5; 
             }
 
             // Gentle wave effect based on time and position
@@ -100,7 +100,7 @@ const ParticleField = () => {
             
             // Size attenuation
             // Increased base size (300.0) to compensate for lower particle count
-            gl_PointSize = (500.0 * aScale) / -mvPosition.z;
+            gl_PointSize = (450.0 * aScale) / -mvPosition.z;
             gl_Position = projectionMatrix * mvPosition;
             
             // Fade out particles near camera or far away

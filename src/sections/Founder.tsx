@@ -113,7 +113,7 @@ const Founder = () => {
                         {/* Signature or CTA could go here */}
                         <div className="mt-10 pt-8 border-t border-white/5 flex items-center justify-between">
                             <div className="font-mono text-xs text-white/40">
-                                EST. 2024
+                                Founder
                             </div>
                             <div className="font-mono text-xs text-white/40">
                                 {t('founder.location')}
