@@ -1,61 +1,224 @@
 {
     "navbar": {
-        "title": "Genix",
-        "services": "Services",
-        "founder": "Founder",
+        "title": "SD",
+        "about": "About",
+        "experience": "Experience",
+        "skills": "Skills",
         "contact": "Contact",
-        "startProject": "Start Project"
+        "getInTouch": "Get in Touch"
     },
     "hero": {
-        "tagline": "Future of Innovation",
-        "title": "GENIX",
-        "subtitle": "Software Factory",
-        "description": "Crafting cutting-edge digital solutions with precision and innovation. Transform your vision into reality with our expert development team.",
-        "startEvolution": "Start Evolution",
-        "viewProjects": "View Projects",
+        "tagline": "Software Developer",
+        "title": "SEBASTIÁN DÍAZ",
+        "subtitle": "Full Stack Engineer",
+        "description": "Software developer with 5+ years of experience, passionate about innovation and continuous learning. I excel in architecting new solutions and optimizing existing platforms, specializing in transforming complex business requirements into elegant, efficient systems.",
+        "viewExperience": "View Experience",
+        "downloadCV": "Download CV",
         "stats": {
-            "projects": "Projects",
-            "quality": "Quality",
-            "support": "Support"
+            "experience": "Years Exp.",
+            "companies": "Companies",
+            "stack": "Full Stack"
         },
         "scroll": "Scroll"
     },
-    "services": {
-        "title": "SYSTEM ARTIFACTS",
-        "items": {
-            "aiDrivenEcosystems": {
-                "title": "AI-Driven Ecosystems",
-                "description": "Architecting self-evolving AI platforms that adapt to business needs.",
-                "metric": "40% Latency Reduction"
-            },
-            "globalApiInfra": {
-                "title": "Global API Infra",
-                "description": "Scalable resource management for high-demand global applications.",
-                "metric": "45% Query Optimization"
-            },
-            "enterpriseScaling": {
-                "title": "Enterprise Scaling",
-                "description": "Robust full-stack systems built with Node.js, Nest.js and Kubernetes.",
-                "metric": "99.9% Uptime Architecture"
-            }
-        }
-    },
-    "founder": {
+    "about": {
         "role": "The Architect",
-        "name": "Sebastian Diaz",
-        "description1": "Founder of Genix. Specialized in transforming complex business visions into <1>scalable, high-impact digital realities</1>.",
-        "description2": "With a proven track record architecting platforms like <1>Reactable AI</1> and <1>Junngla SpA</1>, Sebastian bridges the gap between <3>enterprise-grade engineering</3>—spanning Node.js, Nest.js, and Cloud Infrastructure—and premium product design.",
-        "description3": "A Certified Scrum Professional dedicated to <1>agile precision</1> and <3>evolutionary code quality</3>. We don't just build software; we engineer adaptive systems designed to scale with your business and captivate your users.",
+        "name": "Sebastián Díaz",
+        "description1": "Full Stack Developer specialized in transforming complex business visions into <1>scalable, high-impact digital realities</1>.",
+        "description2": "With a proven track record architecting platforms like <1>Reactable AI</1> and <1>Junngla SpA</1>, I bridge the gap between <3>enterprise-grade engineering</3>—spanning Node.js, Nest.js, and Cloud Infrastructure—and premium product design.",
+        "description3": "A Certified Scrum Professional dedicated to <1>agile precision</1> and <3>evolutionary code quality</3>. I don't just build software; I engineer adaptive systems designed to scale with your business and captivate your users.",
         "stats": {
             "experience": "Experience",
-            "projects": "Projects",
+            "companies": "Companies",
             "stack": "Stack"
         },
         "location": "VIÑA DEL MAR, CL"
     },
+    "experience": {
+        "title": "CAREER JOURNEY",
+        "subtitle": "Building scalable systems across industries",
+        "jobs": [
+            {
+                "role": "Software Engineer",
+                "company": "Reactable AI",
+                "period": "May 2024 — Mar 2025",
+                "location": "Dublin, Ireland",
+                "description": "Led development and maintenance of backend infrastructure for an AI-driven platform, implementing robust API architecture and cloud-based solutions.",
+                "achievements": [
+                    "Architected high-performance backend with Nest.js, reducing API response time by 40%",
+                    "Designed database models with PostgreSQL & Prisma, improving query performance by 45%",
+                    "Orchestrated microservices deployment on GCP with Kubernetes",
+                    "Implemented Paddle payment processing, increasing subscription conversion by 30%",
+                    "Developed LinkedIn & Instagram auth integrations, boosting engagement by 35%"
+                ],
+                "tech": [
+                    "Node.js",
+                    "Nest.js",
+                    "TypeScript",
+                    "PostgreSQL",
+                    "Prisma",
+                    "GCP",
+                    "Kubernetes",
+                    "Docker"
+                ]
+            },
+            {
+                "role": "Full Stack Developer",
+                "company": "Junngla SPA",
+                "period": "Feb 2023 — May 2024",
+                "location": "Santiago, Chile",
+                "description": "Led pivotal projects in QR-based payment transactions, developed global APIs for resource management, and created feature-rich user dashboards.",
+                "achievements": [
+                    "Drove development of dynamic Vue.js web applications with responsive UI",
+                    "Introduced QR Scanner to enhance user interaction and streamline access",
+                    "Created a global configuration API, reducing setup time by 35%",
+                    "Developed user dashboard improving security with role-based access"
+                ],
+                "tech": [
+                    "Vue.js",
+                    "Node.js",
+                    "Express.js",
+                    "Nest.js",
+                    "TypeScript",
+                    "MongoDB"
+                ]
+            },
+            {
+                "role": "Full Stack Developer",
+                "company": "Jumpitt Labs",
+                "period": "Jul 2021 — Feb 2023",
+                "location": "Valparaíso, Chile",
+                "description": "Contributed to a business-focused stories application, utilizing a diverse tech stack and contributing to meaningful growth metrics.",
+                "achievements": [
+                    "Implemented Producer/Consumer micro-services with Apache Kafka, reducing data transfer latency by 30%",
+                    "Designed React.js frontend with TypeScript, JSX, and Material UI",
+                    "Expanded application reach via Electron.js desktop app, increasing adoption by 20%",
+                    "Developed Samsung Tizen Smart TV applications, growing user base by 15%"
+                ],
+                "tech": [
+                    "Node.js",
+                    "Express.js",
+                    "React.js",
+                    "TypeScript",
+                    "Apache Kafka",
+                    "Electron.js"
+                ]
+            },
+            {
+                "role": "Internship",
+                "company": "Sistemas Expertos",
+                "period": "Jul 2020 — Jan 2021",
+                "location": "Viña del Mar, Chile",
+                "description": "Interned working on a software system for managing public hospitals in Chile, optimizing server performance and database operations.",
+                "achievements": [
+                    "Optimized server performance with PHP, accelerating responses by 30% via SQL stored procedures",
+                    "Efficient PostgreSQL data retrieval and operations",
+                    "Built interactive frontend features with JavaScript, Ajax, and jQuery"
+                ],
+                "tech": [
+                    "PHP",
+                    "PostgreSQL",
+                    "JavaScript",
+                    "Ajax",
+                    "jQuery",
+                    "SQL"
+                ]
+            }
+        ]
+    },
+    "skills": {
+        "title": "TECH ARSENAL",
+        "subtitle": "Technologies I work with daily",
+        "categories": {
+            "frontend": {
+                "title": "Frontend",
+                "items": [
+                    {
+                        "name": "React.js",
+                        "level": 90
+                    },
+                    {
+                        "name": "Vue.js",
+                        "level": 85
+                    },
+                    {
+                        "name": "TypeScript",
+                        "level": 95
+                    },
+                    {
+                        "name": "JavaScript",
+                        "level": 95
+                    }
+                ]
+            },
+            "backend": {
+                "title": "Backend",
+                "items": [
+                    {
+                        "name": "Node.js",
+                        "level": 95
+                    },
+                    {
+                        "name": "Nest.js",
+                        "level": 90
+                    },
+                    {
+                        "name": "Express.js",
+                        "level": 90
+                    },
+                    {
+                        "name": "PHP",
+                        "level": 60
+                    }
+                ]
+            },
+            "database": {
+                "title": "Database",
+                "items": [
+                    {
+                        "name": "PostgreSQL",
+                        "level": 90
+                    },
+                    {
+                        "name": "MongoDB",
+                        "level": 85
+                    },
+                    {
+                        "name": "Prisma",
+                        "level": 85
+                    },
+                    {
+                        "name": "SQL",
+                        "level": 90
+                    }
+                ]
+            },
+            "cloud": {
+                "title": "Cloud & DevOps",
+                "items": [
+                    {
+                        "name": "Google Cloud",
+                        "level": 80
+                    },
+                    {
+                        "name": "Docker",
+                        "level": 80
+                    },
+                    {
+                        "name": "Kubernetes",
+                        "level": 70
+                    },
+                    {
+                        "name": "Git",
+                        "level": 95
+                    }
+                ]
+            }
+        }
+    },
     "contact": {
-        "title": "START THE EVOLUTION",
-        "subtitle": "From idea to reality. Let's build something extraordinary.",
+        "title": "LET'S CONNECT",
+        "subtitle": "Have a project in mind? Let's build something extraordinary together.",
         "form": {
             "name": "NAME",
             "email": "EMAIL",
@@ -63,12 +226,12 @@
             "placeholders": {
                 "name": "John Doe",
                 "email": "john@example.com",
-                "message": "Tell us about your project..."
+                "message": "Tell me about your project..."
             },
             "submit": "Send Message"
         },
         "footer": {
-            "tagline": "Evolution in Every Line of Code."
+            "tagline": "Building the Future, One Line at a Time."
         }
     }
 }

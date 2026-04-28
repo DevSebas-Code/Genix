@@ -1,61 +1,224 @@
 {
     "navbar": {
-        "title": "Genix",
-        "services": "Servicios",
-        "founder": "Fundador",
+        "title": "SD",
+        "about": "Sobre Mí",
+        "experience": "Experiencia",
+        "skills": "Habilidades",
         "contact": "Contacto",
-        "startProject": "Iniciar Proyecto"
+        "getInTouch": "Contáctame"
     },
     "hero": {
-        "tagline": "Futuro de la Innovación",
-        "title": "GENIX",
-        "subtitle": "Fábrica de Software",
-        "description": "Creando soluciones digitales de vanguardia con precisión e innovación. Transforme su visión en realidad con nuestro equipo de desarrollo experto.",
-        "startEvolution": "Iniciar Evolución",
-        "viewProjects": "Ver Proyectos",
+        "tagline": "Desarrollador de Software",
+        "title": "SEBASTIÁN DÍAZ",
+        "subtitle": "Ingeniero Full Stack",
+        "description": "Desarrollador de software con más de 5 años de experiencia, apasionado por la innovación y el aprendizaje continuo. Destaco en diseñar nuevas soluciones y optimizar plataformas existentes, especializándome en transformar requisitos complejos de negocio en sistemas elegantes y eficientes.",
+        "viewExperience": "Ver Experiencia",
+        "downloadCV": "Descargar CV",
         "stats": {
-            "projects": "Proyectos",
-            "quality": "Calidad",
-            "support": "Soporte"
+            "experience": "Años Exp.",
+            "companies": "Empresas",
+            "stack": "Full Stack"
         },
-        "scroll": "Desplazarse"
+        "scroll": "Desplazar"
     },
-    "services": {
-        "title": "ARTEFACTOS DEL SISTEMA",
-        "items": {
-            "aiDrivenEcosystems": {
-                "title": "Ecosistemas Impulsados por IA",
-                "description": "Arquitectura de plataformas de IA auto-evolutivas que se adaptan a las necesidades del negocio.",
-                "metric": "40% Reducción de Latencia"
-            },
-            "globalApiInfra": {
-                "title": "Infraestructura API Global",
-                "description": "Gestión de recursos escalable para aplicaciones globales de alta demanda.",
-                "metric": "45% Optimización de Consultas"
-            },
-            "enterpriseScaling": {
-                "title": "Escalado Empresarial",
-                "description": "Sistemas robustos full-stack construidos con Node.js, Nest.js y Kubernetes.",
-                "metric": "99.9% Arquitectura Uptime"
-            }
-        }
-    },
-    "founder": {
+    "about": {
         "role": "El Arquitecto",
-        "name": "Sebastian Diaz",
-        "description1": "Fundador de Genix. Especializado en transformar visiones de negocio complejas en <1>realidades digitales escalables y de alto impacto</1>.",
-        "description2": "Con un historial probado arquitectando plataformas como <1>Reactable AI</1> y <1>Junngla SpA</1>, Sebastian une la brecha entre <3>ingeniería de nivel empresarial</3>—abarcando Node.js, Nest.js e Infraestructura en la Nube—y diseño de producto premium.",
-        "description3": "Un Profesional Scrum Certificado dedicado a la <1>precisión ágil</1> y <3>calidad de código evolutiva</3>. No solo construimos software; diseñamos sistemas adaptativos creados para escalar con su negocio y cautivar a sus usuarios.",
+        "name": "Sebastián Díaz",
+        "description1": "Desarrollador Full Stack especializado en transformar visiones de negocio complejas en <1>realidades digitales escalables y de alto impacto</1>.",
+        "description2": "Con un historial probado arquitectando plataformas como <1>Reactable AI</1> y <1>Junngla SpA</1>, conecto la brecha entre <3>ingeniería de nivel empresarial</3>—abarcando Node.js, Nest.js e Infraestructura en la Nube—y diseño de producto premium.",
+        "description3": "Un Profesional Scrum Certificado dedicado a la <1>precisión ágil</1> y <3>calidad de código evolutiva</3>. No solo construyo software; diseño sistemas adaptativos creados para escalar con tu negocio y cautivar a tus usuarios.",
         "stats": {
             "experience": "Experiencia",
-            "projects": "Proyectos",
+            "companies": "Empresas",
             "stack": "Stack"
         },
         "location": "VIÑA DEL MAR, CL"
     },
+    "experience": {
+        "title": "TRAYECTORIA PROFESIONAL",
+        "subtitle": "Construyendo sistemas escalables en distintas industrias",
+        "jobs": [
+            {
+                "role": "Ingeniero de Software",
+                "company": "Reactable AI",
+                "period": "May 2024 — Mar 2025",
+                "location": "Dublín, Irlanda",
+                "description": "Lideré el desarrollo y mantenimiento de infraestructura backend para una plataforma impulsada por IA, implementando arquitectura de API robusta y soluciones en la nube.",
+                "achievements": [
+                    "Arquitecté backend de alto rendimiento con Nest.js, reduciendo tiempos de respuesta API en un 40%",
+                    "Diseñé modelos de base de datos con PostgreSQL & Prisma, mejorando rendimiento de consultas en un 45%",
+                    "Orquesté despliegue de microservicios en GCP con Kubernetes",
+                    "Implementé procesamiento de pagos con Paddle, incrementando conversión de suscripciones en un 30%",
+                    "Desarrollé integraciones de auth con LinkedIn e Instagram, aumentando engagement en un 35%"
+                ],
+                "tech": [
+                    "Node.js",
+                    "Nest.js",
+                    "TypeScript",
+                    "PostgreSQL",
+                    "Prisma",
+                    "GCP",
+                    "Kubernetes",
+                    "Docker"
+                ]
+            },
+            {
+                "role": "Desarrollador Full Stack",
+                "company": "Junngla SPA",
+                "period": "Feb 2023 — May 2024",
+                "location": "Santiago, Chile",
+                "description": "Lideré proyectos clave en transacciones de pago basadas en QR, desarrollé APIs globales para gestión de recursos y creé dashboards ricos en funcionalidades.",
+                "achievements": [
+                    "Impulsé desarrollo de aplicaciones web dinámicas con Vue.js con UI responsiva",
+                    "Introduje escáner QR para mejorar interacción de usuario y optimizar acceso",
+                    "Creé API de configuración global, reduciendo tiempo de configuración en un 35%",
+                    "Desarrollé dashboard de usuario mejorando seguridad con acceso basado en roles"
+                ],
+                "tech": [
+                    "Vue.js",
+                    "Node.js",
+                    "Express.js",
+                    "Nest.js",
+                    "TypeScript",
+                    "MongoDB"
+                ]
+            },
+            {
+                "role": "Desarrollador Full Stack",
+                "company": "Jumpitt Labs",
+                "period": "Jul 2021 — Feb 2023",
+                "location": "Valparaíso, Chile",
+                "description": "Contribuí al desarrollo de una aplicación de historias enfocada en negocios, utilizando un stack tecnológico diverso y contribuyendo a métricas de crecimiento significativas.",
+                "achievements": [
+                    "Implementé micro-servicios Productor/Consumidor con Apache Kafka, reduciendo latencia en un 30%",
+                    "Diseñé frontend con React.js, TypeScript, JSX y Material UI",
+                    "Expandí alcance de la aplicación vía Electron.js, incrementando adopción en un 20%",
+                    "Desarrollé aplicaciones para Samsung Tizen Smart TV, creciendo base de usuarios en un 15%"
+                ],
+                "tech": [
+                    "Node.js",
+                    "Express.js",
+                    "React.js",
+                    "TypeScript",
+                    "Apache Kafka",
+                    "Electron.js"
+                ]
+            },
+            {
+                "role": "Pasantía",
+                "company": "Sistemas Expertos",
+                "period": "Jul 2020 — Ene 2021",
+                "location": "Viña del Mar, Chile",
+                "description": "Pasantía trabajando en un sistema de software para gestión de hospitales públicos en Chile, optimizando rendimiento de servidor y operaciones de base de datos.",
+                "achievements": [
+                    "Optimicé rendimiento del servidor con PHP, acelerando respuestas en un 30% vía procedimientos almacenados SQL",
+                    "Recuperación y operaciones eficientes con PostgreSQL",
+                    "Construí funcionalidades frontend interactivas con JavaScript, Ajax y jQuery"
+                ],
+                "tech": [
+                    "PHP",
+                    "PostgreSQL",
+                    "JavaScript",
+                    "Ajax",
+                    "jQuery",
+                    "SQL"
+                ]
+            }
+        ]
+    },
+    "skills": {
+        "title": "ARSENAL TECNOLÓGICO",
+        "subtitle": "Tecnologías con las que trabajo a diario",
+        "categories": {
+            "frontend": {
+                "title": "Frontend",
+                "items": [
+                    {
+                        "name": "React.js",
+                        "level": 90
+                    },
+                    {
+                        "name": "Vue.js",
+                        "level": 85
+                    },
+                    {
+                        "name": "TypeScript",
+                        "level": 95
+                    },
+                    {
+                        "name": "JavaScript",
+                        "level": 95
+                    }
+                ]
+            },
+            "backend": {
+                "title": "Backend",
+                "items": [
+                    {
+                        "name": "Node.js",
+                        "level": 95
+                    },
+                    {
+                        "name": "Nest.js",
+                        "level": 90
+                    },
+                    {
+                        "name": "Express.js",
+                        "level": 90
+                    },
+                    {
+                        "name": "PHP",
+                        "level": 60
+                    }
+                ]
+            },
+            "database": {
+                "title": "Base de Datos",
+                "items": [
+                    {
+                        "name": "PostgreSQL",
+                        "level": 90
+                    },
+                    {
+                        "name": "MongoDB",
+                        "level": 85
+                    },
+                    {
+                        "name": "Prisma",
+                        "level": 85
+                    },
+                    {
+                        "name": "SQL",
+                        "level": 90
+                    }
+                ]
+            },
+            "cloud": {
+                "title": "Cloud & DevOps",
+                "items": [
+                    {
+                        "name": "Google Cloud",
+                        "level": 80
+                    },
+                    {
+                        "name": "Docker",
+                        "level": 80
+                    },
+                    {
+                        "name": "Kubernetes",
+                        "level": 70
+                    },
+                    {
+                        "name": "Git",
+                        "level": 95
+                    }
+                ]
+            }
+        }
+    },
     "contact": {
-        "title": "INICIA LA EVOLUCIÓN",
-        "subtitle": "De la idea a la realidad. Construyamos algo extraordinario.",
+        "title": "CONECTEMOS",
+        "subtitle": "¿Tienes un proyecto en mente? Construyamos algo extraordinario juntos.",
         "form": {
             "name": "NOMBRE",
             "email": "CORREO",
@@ -63,12 +226,12 @@
             "placeholders": {
                 "name": "Juan Pérez",
                 "email": "juan@ejemplo.com",
-                "message": "Cuéntanos sobre tu proyecto..."
+                "message": "Cuéntame sobre tu proyecto..."
             },
             "submit": "Enviar Mensaje"
         },
         "footer": {
-            "tagline": "Evolución en Cada Línea de Código."
+            "tagline": "Construyendo el Futuro, Una Línea a la Vez."
         }
     }
 }

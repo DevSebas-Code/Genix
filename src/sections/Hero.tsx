@@ -3,7 +3,7 @@ import { useRef, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import HeroBackground3D from '../components/ui/HeroBackground3D';
 import Button from '../components/ui/Button';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, Download, Sparkles } from 'lucide-react';
 
 // Specialized Counter Component for number animations
 const AnimatedCounter = ({ value, suffix = "" }: { value: number, suffix?: string }) => {
@@ -15,7 +15,7 @@ const AnimatedCounter = ({ value, suffix = "" }: { value: number, suffix?: strin
         if (inView) {
             const controls = animate(0, value, {
                 duration: 5,
-                ease: [0.16, 1, 0.3, 1], // Custom ease-out function
+                ease: [0.16, 1, 0.3, 1],
                 onUpdate(current) {
                     setCount(Math.round(current).toString());
                 }
@@ -42,7 +42,6 @@ const Hero = () => {
     const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
     const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
-    // Added floating animation to simulate the antigravity brand requirement
     const floatingAnimation = {
         y: [0, -15, 0],
         transition: {
@@ -108,7 +107,6 @@ const Hero = () => {
 
     return (
         <section ref={containerRef} className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
-            {/* Injecting premium fonts dynamically for the professional look */}
             <style>
                 {`
                 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;600;700&display=swap');
@@ -118,7 +116,7 @@ const Hero = () => {
             {/* Background Layer */}
             <HeroBackground3D containerRef={containerRef} />
 
-            {/* Lighter Gradient Overlay for Better Particle Visibility */}
+            {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-b from-dark/20 via-dark/40 to-[#050505]/80 pointer-events-none" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(5,5,5,0.2)_100%)] pointer-events-none" />
 
@@ -127,26 +125,18 @@ const Hero = () => {
                 style={{ y, opacity }}
                 className="relative z-10 flex flex-col items-center text-center px-4 w-full max-w-6xl will-change-transform"
             >
-                {/* Premium Glass Card Container */}
                 <motion.div
                     variants={containerVariants}
                     initial="hidden"
                     animate="visible"
                     className="relative w-full"
                 >
-                    <motion.div animate={floatingAnimation as any} className="relative">
-                        {/* Main Glass Card - Lighter and More Transparent */}
+                    <motion.div animate={floatingAnimation as import('framer-motion').TargetAndTransition} className="relative">
                         <div className="relative rounded-[2.5rem] p-8 md:p-16 overflow-hidden">
-                            {/* True Glass backdrop effect */}
+                            {/* Glass backdrop */}
                             <div className="absolute inset-0 bg-white/[0.02] backdrop-blur-2xl border border-white/[0.06] shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] rounded-[2.5rem] pointer-events-none" />
-
-                            {/* Inner ambient glow */}
                             <div className="absolute inset-0 rounded-[2.5rem] bg-gradient-to-br from-white/[0.08] via-transparent to-transparent opacity-60 pointer-events-none" />
-
-                            {/* Top crisp border highlight */}
                             <div className="absolute top-0 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent pointer-events-none opacity-60" />
-
-                            {/* Center Ambient Light behind text */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[60%] bg-brand-500/10 blur-[100px] rounded-full pointer-events-none" />
 
                             {/* Content */}
@@ -163,20 +153,19 @@ const Hero = () => {
                                     <Sparkles className="w-5 h-5 text-brand-400 opacity-80" />
                                 </motion.div>
 
-                                {/* Main Title - GENIX with True Glassmorphism Text */}
+                                {/* Main Title */}
                                 <motion.h1
-                                    className="relative flex justify-center items-center overflow-visible"
+                                    className="relative flex justify-center items-center overflow-visible flex-wrap"
                                 >
-                                    <div className="flex justify-center items-center overflow-visible">
+                                    <div className="flex justify-center items-center overflow-visible flex-wrap">
                                         {letters.map((char, i) => (
                                             <motion.span
                                                 key={i}
                                                 custom={i}
                                                 variants={letterVariants}
-                                                className="inline-block text-[5rem] md:text-9xl lg:text-[13rem] font-bold tracking-tighter"
+                                                className="inline-block text-[3rem] md:text-7xl lg:text-[8rem] font-bold tracking-tighter"
                                                 style={{
                                                     fontFamily: "'Space Grotesk', sans-serif",
-                                                    // True glassmorphic text styling
                                                     color: 'transparent',
                                                     WebkitTextStroke: '1.5px rgba(255, 255, 255, 0.4)',
                                                     background: 'linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.15) 100%)',
@@ -189,7 +178,7 @@ const Hero = () => {
                                                     willChange: 'transform, opacity, filter'
                                                 }}
                                             >
-                                                {char}
+                                                {char === " " ? "\u00A0" : char}
                                             </motion.span>
                                         ))}
                                     </div>
@@ -222,49 +211,48 @@ const Hero = () => {
                                     className="flex flex-col sm:flex-row gap-5 justify-center items-center pt-8 pointer-events-auto"
                                     style={{ fontFamily: "'Outfit', sans-serif" }}
                                 >
-                                    <Button variant="primary" size="lg" className="group rounded-full px-8 py-4 bg-brand-500 hover:bg-brand-600 font-medium tracking-wide">
-                                        {t('hero.startEvolution')}
-                                        <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
-                                    </Button>
+                                    <a href="#experience">
+                                        <Button variant="primary" size="lg" className="group rounded-full px-8 py-4 bg-brand-500 hover:bg-brand-600 font-medium tracking-wide">
+                                            {t('hero.viewExperience')}
+                                            <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
+                                        </Button>
+                                    </a>
                                     <Button variant="outline" size="lg" className="group rounded-full px-8 py-4 border-white/20 hover:bg-white/5 font-medium tracking-wide">
-                                        {t('hero.viewProjects')}
+                                        <Download className="w-4 h-4 mr-2" />
+                                        {t('hero.downloadCV')}
                                     </Button>
                                 </motion.div>
 
-                                {/* Stats or Features */}
+                                {/* Stats */}
                                 <motion.div
                                     variants={itemVariants}
                                     className="grid grid-cols-3 gap-8 pt-10 mt-10 border-t border-white/[0.06]"
                                     style={{ fontFamily: "'Outfit', sans-serif" }}
                                 >
-                                    {/* 50+ Projects */}
                                     <div className="text-center group">
                                         <div className="text-3xl md:text-4xl font-semibold text-white/80 mb-2 transition-colors group-hover:text-white">
-                                            <AnimatedCounter value={50} suffix="+" />
+                                            <AnimatedCounter value={5} suffix="+" />
                                         </div>
                                         <div className="text-[10px] md:text-xs text-brand-400 uppercase tracking-[0.25em] font-medium opacity-80 group-hover:opacity-100 transition-opacity">
-                                            {t('hero.stats.projects')}
+                                            {t('hero.stats.experience')}
                                         </div>
                                     </div>
 
-                                    {/* 100% Quality */}
                                     <div className="text-center group">
                                         <div className="text-3xl md:text-4xl font-semibold text-white/80 mb-2 transition-colors group-hover:text-white">
-                                            <AnimatedCounter value={100} suffix="%" />
+                                            <AnimatedCounter value={4} />
                                         </div>
                                         <div className="text-[10px] md:text-xs text-brand-400 uppercase tracking-[0.25em] font-medium opacity-80 group-hover:opacity-100 transition-opacity">
-                                            {t('hero.stats.quality')}
+                                            {t('hero.stats.companies')}
                                         </div>
                                     </div>
 
-                                    {/* 24/7 Support */}
-                                    {/* We make an exception for 24/7 as it's a fixed fraction string instead of single number */}
                                     <div className="text-center group">
                                         <div className="text-3xl md:text-4xl font-semibold text-white/80 mb-2 transition-colors group-hover:text-white">
-                                            24/7
+                                            ✦
                                         </div>
                                         <div className="text-[10px] md:text-xs text-brand-400 uppercase tracking-[0.25em] font-medium opacity-80 group-hover:opacity-100 transition-opacity">
-                                            {t('hero.stats.support')}
+                                            {t('hero.stats.stack')}
                                         </div>
                                     </div>
                                 </motion.div>

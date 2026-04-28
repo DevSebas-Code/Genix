@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Button from '../components/ui/Button';
-import { Mail, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Github, Linkedin } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
@@ -65,7 +65,7 @@ const Contact = () => {
                 <footer className="mt-32 border-t border-white/10 pt-12 flex flex-col md:flex-row justify-between items-center gap-8">
                     <div className="text-center md:text-left">
                         <div className="flex items-center gap-2 justify-center md:justify-start mb-4">
-                            <span className="font-mono font-bold text-xl tracking-tighter">GENIX</span>
+                            <span className="font-mono font-bold text-xl tracking-tighter">SEBASTIÁN DÍAZ</span>
                         </div>
                         <p className="text-sm text-white/40">
                             {t('contact.footer.tagline')}
@@ -73,15 +73,14 @@ const Contact = () => {
                     </div>
 
                     <div className="flex gap-6">
-                        <a href="#" className="text-white/40 hover:text-white transition-colors"><Github className="w-5 h-5" /></a>
-                        <a href="#" className="text-white/40 hover:text-white transition-colors"><Linkedin className="w-5 h-5" /></a>
-                        <a href="#" className="text-white/40 hover:text-white transition-colors"><Twitter className="w-5 h-5" /></a>
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white transition-colors"><Github className="w-5 h-5" /></a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white transition-colors"><Linkedin className="w-5 h-5" /></a>
                         <a href="mailto:sebastian.diaz.dev98@gmail.com" className="text-white/40 hover:text-white transition-colors"><Mail className="w-5 h-5" /></a>
                     </div>
                 </footer>
 
                 <div className="text-center mt-12 text-xs text-white/20 font-mono">
-                    © 2026 Genix. Founder: Sebastian Diaz.
+                    © 2026 Sebastián Díaz. All rights reserved.
                 </div>
             </div>
         </section>

@@ -1,8 +1,9 @@
 import SmoothScroll from './components/layout/SmoothScroll';
 import Navbar from './components/layout/Navbar';
 import Hero from './sections/Hero';
-import Services from './sections/Services';
-import Founder from './sections/Founder';
+import About from './sections/About';
+import Experience from './sections/Experience';
+import Skills from './sections/Skills';
 import Contact from './sections/Contact';
 
 function App() {
@@ -12,8 +13,9 @@ function App() {
         <Navbar />
 
         <Hero />
-        <Services />
-        <Founder />
+        <About />
+        <Experience />
+        <Skills />
         <Contact />
       </main>
     </SmoothScroll>
